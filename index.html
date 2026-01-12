@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Todo list</h1>
+        </div>
+
+        <div class="main-content">
+
+            <div class="column active-column">
+                <div class="column-header">
+                    <h2>Активные задачи</h2>
+                    <div class="task-counter" id="active-counter">0</div>
+                </div>
+                <div class="add-form">
+                    <input type="text" id="task-input" placeholder="Напиши задачу...">
+                    <button id="add-btn" class="add-button">➕</button>
+                </div>
+                <div class="tasks-list" id="active-list"></div>
+            </div>
+
+            <div class="column completed-column">
+                <div class="column-header">
+                    <h2>✅ Выполнено</h2>
+                    <div class="task-counter" id="completed-counter">0</div>
+                </div>
+                <div class="tasks-list" id="completed-list"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
